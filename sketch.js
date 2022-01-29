@@ -1,5 +1,4 @@
-var HEIGHT=800;
-var WIDTH=1350;
+
 var R=250;
 var N=200;
 var m=2;
@@ -13,7 +12,7 @@ var spaceCounter=0;
 function setup() {
   
 
-  createCanvas(WIDTH,HEIGHT);
+  createCanvas(windowWidth, windowHeight);
   loop();
 }
 
@@ -35,10 +34,10 @@ function draw() {
 }
 
 function pixelTransformX(x){
-  return x+WIDTH/2;
+  return x+windowWidth/2;
 }
 function pixelTransformY(y){
-  return HEIGHT/2-y;
+  return windowHeight/2-y;
 }
 
 function drawCycle(){
